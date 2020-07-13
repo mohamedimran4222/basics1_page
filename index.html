@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to this site</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .yes {
+        background-color: skyblue;
+        padding: 20px;
+      }
+      #no {
+        background-color: red;
+        padding: 20px;
+      }
+      #div {
+        background-color: sandybrown;
+        font-size: 20px;
+        padding: 20px;
+        margin-top: 30px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Are u listening</h1>
+
+    <button class="yes" onclick="yesfunction()">Show this message</button>
+
+    <button id="no" onclick="nofunction()">Hide this message</button>
+    <div id="div">
+      Yes,I am listening.
+    </div>
+
+    <script>
+      function yesfunction() {
+        var x = document.getElementById("div");
+        x.style.display = "block";
+      }
+      function nofunction() {
+        var y = document.getElementById("div");
+        y.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
